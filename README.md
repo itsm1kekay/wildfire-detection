@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <table style="width: 100%; table-layout: fixed ">
   <tr>
     <td>
@@ -134,3 +135,22 @@ H. Harkat, H. F. T. Ahmed, J. M. P. Nascimento, and A. Bernardino, “Early fire
 <a id="21">[21]</a> 
 L. Huang, G. Liu, Y. Wang, H. Yuan, and T. Chen, “Fire detection in video surveillances using convolutional neural networks and wavelet transform,” Engineering Applications of Artificial Intelligence, vol. 110, p. 104737, Apr. 2022, 
 [![DOI:10.1016/j.engappai.2022.104737](https://zenodo.org/badge/DOI/10.1016/j.engappai.2022.104737.svg)](https://doi.org/10.1016/j.engappai.2022.104737)
+=======
+Objectives:
+- how much does dataset effect prediction performance. Can wildfires detection from Greece be generalized to other countries
+- Data availability 
+- what modelling techniques offer best results
+	- DL vs ML vs image processing
+	- segmentation vs object detection
+	- segmentation PLUS object detection 
+		- score development (IOU, F1)
+	- accuracy vs compute
+Question:
+- Do the algorithms need to be written from scratch or may we use packages?
+- What algorithms are permitted? Can we use DL?
+
+Dataset:
+- https://www.kaggle.com/datasets/elmadafri/the-wildfire-dataset - Range of resolutions
+- https://www.kaggle.com/datasets/abdelghaniaaba/wildfire-prediction-dataset - Low Res ~42k images
+- https://zenodo.org/records/6475592 - Example from notebook
+>>>>>>> 2df3dffb (adds gitignore)
