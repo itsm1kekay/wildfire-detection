@@ -165,8 +165,6 @@ Dataset:
 
 ## Models
 
-https://arxiv.org/pdf/2403.17884 # (Sen2Fire - ESA satellite imagery collected by Sentinel-2 and Sentinel-5P)
-
 ## Dataset
 D-Fire Dataset: https://github.com/gaiasd/DFireDataset # (Annotated in Yolo format)
 
