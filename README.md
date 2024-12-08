@@ -16,7 +16,7 @@ Repository for group project in real-time wildfire detection for the EE581 modul
 The project is split into 2 parts - two subgroups - developing an algorithm each, capable of detecting wildfires in real-time.
   - The first group, comprising of Joseph Kromer and Michail Kasmeridis, are developing an algorithm that uses conventional image processing techniques to identify wildfires.
   - The second group, comprising of Sai Tam and Mukul Narwani, are developing a Machine Learning algorithm that classifies wildfires.
-  - In subsequent times, the groubs will unite and collaborate in a hybrid approach. [[1]](#1)
+  - In subsequent times, the groubs will unite and collaborate in a hybrid approach. 
   - The 3 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#performance).
 
 The current progress of the group is tracked using a [Gannt Chart](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#gantt-chart).
@@ -24,7 +24,7 @@ The current progress of the group is tracked using a [Gannt Chart](https://githu
 ## Flow charts and system design
 ### Conventional approach:
 <h1 align="center">
-  <img src= "/assets/Conventional Approach.jpg"
+  <img src= "/assets/Conventional Approach.png"
   width = "400"
 </h1>
 
@@ -35,14 +35,14 @@ The current progress of the group is tracked using a [Gannt Chart](https://githu
 </h1>
 
 ## Performance
-|      Metrics       |Convensional|  ML-model  |   Hybrid   |
-|--------------------|------------|------------|------------|
-|Computational cost  |    TBD     |    TBD     |    TBD     |
-|Speed (in fps)      |    TBD     |    TBD     |    TBD     |
-|Adaptability        |    TBD     |    TBD     |    TBD     |
-|Detection rate      |    TBD     |    TBD     |    TBD     |
-|False positives     |    TBD     |    TBD     |    TBD     |
-|False negatives     |    TBD     |    TBD     |    TBD     |
+|      Metrics       |Convensional|  ML-model  |   Yolo |  U-Net  |   Deeplab (optional)      |   Hybrids  |
+|--------------------|------------|------------|--------|---------|---------------------------|------------|
+|Computational cost  |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
+|Speed (in fps)      |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
+|Adaptability        |    TBD     |    TBD     |    TBD |   TBD   |           MBD             |    TBD     |
+|Detection rate      |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
+|Precision           |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
+|Recall              |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
 
 ## Gantt Chart
 <h1 align="center">
@@ -50,11 +50,10 @@ The current progress of the group is tracked using a [Gannt Chart](https://githu
   width = "1000"
 </h1>
   
-## Links given for wildfire-detection
+## Websites for images 
 - https://www.goes.noaa.gov
 - https://terra.nasa.gov/about/terra-instruments/modis 
 - https://data-nifc.opendata.arcgis.com/search?tags=cy_wildlandfire_opendata%2CCategory 
-- https://github.com/DeepCube-org/uc3-public-notebooks/blob/main/1_UC3_Datacube_Access_and_Plotting.ipynb
   
 ## References
 <a id="1">[1]</a> 
@@ -109,7 +108,7 @@ A. Bouguettaya, H. Zarzour, A. M. Taberkit, and A. Kechida, “A review on early
 Z. Jiao et al., “A Deep Learning Based Forest Fire Detection Approach Using UAV and YOLOv3,” IEEE Xplore, pp. 1–5, Jul. 2019, [![DOI:10.1109/ICIAI.2019.8850815](https://zenodo.org/badge/DOI/10.1109/ICIAI.2019.8850815.svg)](https://doi.org/10.1109/ICIAI.2019.8850815)
 
 <a id="16">[16]</a> 
-M. Li et al., “A Real-time Fire Segmentation Method Based on A Deep Learning Approach,” IFAC-PapersOnLine, vol. 55, no. 6, pp. 145–150, 2022, [![DOI:10.1016/j.ifacol.2022.07.120](https://zenodo.org/badge/10.1016/j.ifacol.2022.07.120.svg)](https://doi.org/10.1016/j.ifacol.2022.07.120)
+M. Li et al., “A Real-time Fire Segmentation Method Based on A Deep Learning Approach,” IFAC-PapersOnLine, vol. 55, no. 6, pp. 145–150, 2022, [![DOI:10.1016/j.ifacol.2022.07.120](https://zenodo.org/badge/DOI/10.1016/j.ifacol.2022.07.120.svg)](https://doi.org/10.1016/j.ifacol.2022.07.120)
 
 <a id="17">[17]</a> 
 P. Barmpoutis, T. Stathaki, K. Dimitropoulos, and N. Grammalidis, “Early Fire Detection Based on Aerial 360-Degree Sensors, Deep Convolution Neural Networks and Exploitation of Fire Dynamic Textures,” Remote Sensing, vol. 12, no. 19, p. 3177, Sep. 2020, [![DOI:10.3390/rs12193177](https://zenodo.org/badge/DOI/10.3390/rs12193177.svg)](https://doi.org/10.3390/rs12193177)
