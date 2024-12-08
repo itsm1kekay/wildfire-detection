@@ -24,7 +24,7 @@ The current progress of the group is tracked using a [Gannt Chart](https://githu
 ## Flow charts and system design
 ### Conventional approach:
 <h1 align="center">
-  <img src= "/assets/Flowchart using kernel.jpg"
+  <img src= "/assets/Conventional Approach.jpg"
   width = "400"
 </h1>
 
