@@ -1,5 +1,9 @@
 close all; clear all; clc;
 
+
+
+
+
 frame_based=false;
 
 % frame extraction
@@ -32,7 +36,7 @@ if (frame_based==false)
             selected_video="videos_of_wildfires/Drones_vs._Californias_wildfires__How_theyre_helping_firefighters.mp4";
         case 5
             selected_video="videos_of_wildfires/Incredible_Aerial_Footage_Shows_New_California_Wildfire_Burning_in_LA.mp4";
-        case 6
+        case 6  
             selected_video="videos_of_wildfires/Raw_Video_Black_Forest_Fire.mp4";
         case 7
             selected_video="videos_of_wildfires/Silviculture_Surveying_with_UAVs_in_Forest_Management.mp4";
@@ -53,7 +57,10 @@ if (frame_based==false)
             return;
             
     end
+    clc;    disp("Please wait, processing...")
     video_frames= frame_extraction(selected_video);
+    [~,name,~]=fileparts(selected_video);
+    save(name,"video_frames","-v7.3");
 end
 for i=2:size(video_frames,4)
     video_frame_i = video_frames(:,:,:,i);
@@ -68,9 +75,8 @@ for i=2:size(video_frames,4)
         subplot(1,2,1);imshow(manipulated_image_i); title("Frame 10 CIELAB");
         subplot(1,2,2);imshow(video_frame_i); title("Original frame 10")
     end
-
 end
-
+clc;disp("Done")
 
 function video_frames= frame_extraction(input)
     imported_video=VideoReader(input);
@@ -86,7 +92,7 @@ function video_frames= frame_extraction(input)
     % video_frames = frame_array(:, :, :, 1:frame_index-1);                 % truncate to accomodate for miscalulation of frames
 end
 
-function binarised = frame_manipulation(video_frame,reference)
+function cielab_image = frame_manipulation(video_frame,reference)
     % frame manipulation strategy
 
     if reference==0
@@ -99,7 +105,7 @@ function binarised = frame_manipulation(video_frame,reference)
 
     cielab_image=rgb2lab(threshold);
     % do i really need to threshold? it appears perfect for edge detection
-    binarised=cielab_image(:,:,1);
+    % binarised=cielab_image(:,:,1);
 
     % 4. threshold the image
     % 5. do image processing and edge detection (look-up LR)
