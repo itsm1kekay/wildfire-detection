@@ -1,13 +1,7 @@
 close all; clear all; clc;
 
-
-
-
-
-frame_based=false;
-
-% frame extraction
-if (frame_based==false)
+frame_based=true;
+if (frame_based==true)
     text4input=["For BBC Learning English Video Words in the News Forest fires hit the US                           enter 1 ",...
         "For Dramatic evacuations by sea as forest fires rage in Italy and Turkey                           enter 2 ",...
         "For Drone footage shows before and after wildfires ravage Turkey's pine forests                    enter 3 ",...
@@ -23,75 +17,82 @@ if (frame_based==false)
         "For nofire_400240                                                                                  enter 13 ",...
         "Enter your choice: "];
     text4input= strjoin(text4input, '\n');
-    desired_video = input(text4input);
 
-    switch desired_video
+    switch input(text4input)
         case 1
-            selected_video="videos_of_wildfires/BBC_Learning_English_Video_Words_in_the_News_Forest_fires_hit_the_US.mp4";
+            imageDir = 'databases/BBC_Learning_English_Video_Words_in_the_News_Forest_fires_hit_the_US';
         case 2
-            selected_video="videos_of_wildfires/Dramatic_evacuations_by_sea_as_forest_fires_rage_in_Italy_and_Turkey.mp4";
+            imageDir = 'databases/Dramatic_evacuations_by_sea_as_forest_fires_rage_in_Italy_and_Turkey';
         case 3
-            selected_video="videos_of_wildfires/Drone_footage_shows_before_and_after_wildfires_ravage_Turkeys_pine_forests.mp4";
+            imageDir = 'databases/Drone_footage_shows_before_and_after_wildfires_ravage_Turkeys_pine_forests';
         case 4
-            selected_video="videos_of_wildfires/Drones_vs._Californias_wildfires__How_theyre_helping_firefighters.mp4";
+            imageDir = 'databases/Drones_vs._Californias_wildfires__How_theyre_helping_firefighters';
         case 5
-            selected_video="videos_of_wildfires/Incredible_Aerial_Footage_Shows_New_California_Wildfire_Burning_in_LA.mp4";
-        case 6  
-            selected_video="videos_of_wildfires/Raw_Video_Black_Forest_Fire.mp4";
+            imageDir = 'databases/Incredible_Aerial_Footage_Shows_New_California_Wildfire_Burning_in_LA';
+        case 6
+            imageDir = 'databases/Raw_Video_Black_Forest_Fire';
         case 7
-            selected_video="videos_of_wildfires/Silviculture_Surveying_with_UAVs_in_Forest_Management.mp4";
+            imageDir = 'databases/Silviculture_Surveying_with_UAVs_in_Forest_Management';
         case 8
-            selected_video="videos_of_wildfires/Sunday_Journal__Apocalyptic_Western_wildfire.mp4";
+            imageDir = 'databases/Sunday_Journal__Apocalyptic_Western_wildfire';
         case 9
-            selected_video="videos_of_wildfires/Turkey_wildfires_Drone_footage_shows_destruction_left_by_blaze.mp4";
+            imageDir = 'databases/Turkey_wildfires_Drone_footage_shows_destruction_left_by_blaze';
         case 10
-            selected_video="videos_of_wildfires/US_wildfires__Firefighters_continue_battle_against_blazes_that_have_left_at_least_35_dead.mp4";
+            imageDir = 'databases/US_wildfires__Firefighters_continue_battle_against_blazes_that_have_left_at_least_35_dead';
         case 11
-            selected_video="videos_of_wildfires/dalma_400240.mp4";
+            imageDir = 'databases/dalma_400240';
         case 12
-            selected_video="videos_of_wildfires/gwanak_400240.mp4";
+            imageDir = 'databases/gwanak_400240';
         case 13
-            selected_video="videos_of_wildfires/nofire_400240.mp4";
+            imageDir = 'databases/nofire_400240';
         otherwise
             disp("Please select one of the listed options!");
             return;
-            
     end
-    clc;    disp("Please wait, processing...")
-    video_frames= frame_extraction(selected_video);
-    [~,name,~]=fileparts(selected_video);
-    save(name,"video_frames","-v7.3");
-end
-for i=2:size(video_frames,4)
-    video_frame_i = video_frames(:,:,:,i);
-    video_frame_1_previous=video_frames(:,:,:,i-1);
+else
+    % This theoretically works, untested! -- acc works hahahahahhahah
+    disp("Please drag and drop your video in the /videos_of_wildfire/ folder and press any key.");
+    pause;
+    database_generation_script;
 
-    % frame manipulation
-    manipulated_image_i=frame_manipulation(video_frame_i,video_frame_1_previous);
+    frame_folders = dir('databases/*');
+    frame_folders = frame_folders([frame_folders.isdir]); 
 
-    % classification and plotting
-    if i == 100
-        figure; 
-        subplot(1,2,1);imshow(manipulated_image_i); title("Frame 10 CIELAB");
-        subplot(1,2,2);imshow(video_frame_i); title("Original frame 10")
+    if isempty(frame_folders)
+        error("No frame folders found in 'databases'. Please check the video processing.");
     end
-end
-clc;disp("Done")
 
-function video_frames= frame_extraction(input)
-    imported_video=VideoReader(input);
-    num_of_frames=floor(imported_video.Duration*imported_video.FrameRate);
-    frame_array=zeros(imported_video.Height,imported_video.Width,3, ...    
-        num_of_frames,'uint8');                                             % 'uint8' for 8 bit video (24 for rgb)
-    frame_index=1;                                                          % 'uint16' for 16 bit video (48 for rgb)
-    while hasFrame(imported_video)
-        frame_array(:,:,:,frame_index)=readFrame(imported_video);
-        frame_index= frame_index+1;
-    end
-    video_frames=frame_array;
-    % video_frames = frame_array(:, :, :, 1:frame_index-1);                 % truncate to accomodate for miscalulation of frames
+    [~, idx] = max([frame_folders.datenum]);
+    imageDir = fullfile('databases/', frame_folders(idx).name);
 end
 
+disp(['Loading frames from: ', imageDir]);
+if ~isfolder(imageDir)
+    error('The specified directory does not exist: %s', imageDir);
+end
+
+frame_files = dir(fullfile(imageDir, '*.jpg'));
+if isempty(frame_files)
+    error('No .jpg files found in the directory: %s', imageDir);
+end
+frame_struct = struct('name', [], 'data', [], 'size', []);
+[~, sorted_idx] = sort({frame_files.name});
+frame_files = frame_files(sorted_idx);
+
+for k = 1:length(frame_files)
+    filePath = fullfile(imageDir, frame_files(k).name);
+    img = imread(filePath);
+    
+    frame_struct(k).name = frame_files(k).name;
+    frame_struct(k).data = img;
+    frame_struct(k).size = size(img); 
+    figure(1);clf;
+    imshow(frame_struct(k).data);
+    title(frame_struct(k).name);
+end 
+
+clc;disp("Done! Total number of detected fire frames are: fuck all")
+ 
 function cielab_image = frame_manipulation(video_frame,reference)
     % frame manipulation strategy
 
