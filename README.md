@@ -13,11 +13,12 @@
 
 ## Description
 Repository for group project in real-time wildfire detection for the EE581 module at the University of Strathclyde, developed by Group 8 (Joseph Kromer, Sai Tam, Mukul Narwani and Michail Kasmeridis). 
-The project is split into 2 parts - two subgroups - developing an algorithm each, capable of detecting wildfires in real-time.
-  - The first group, comprising of Joseph Kromer and Michail Kasmeridis, are developing an algorithm that uses conventional image processing techniques to identify wildfires.
-  - The second group, comprising of Sai Tam and Mukul Narwani, are developing a Machine Learning algorithm that classifies wildfires.
-  - In subsequent times, the groubs will unite and collaborate in a hybrid approach. 
-  - The 3 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#performance).
+The project is split into 3 parts, each person developing an algorithm, capable of detecting wildfires in real-time.
+  - The first algorithm developed by Michail Kasmeridis uses conventional image processing techniques and can be found [here](https://github.com/itsm1kekay/wildfire-detection/conventional).
+  - The second algorithm, developed by Joseph Kromer, used conventional + ML to develop a hybrid model and can be found [here](https://github.com/itsm1kekay/wildfire-detection/hybrid).   
+  - The third algorithm, developed by Mukul Narwani, is a Convolutional Neural Network based off of UNet and can be found [here](https://github.com/itsm1kekay/wildfire-detection/UNet).
+  - The fourth algorithm, developed by Sai Tam, is another Convolutional Neural Network based off of YOLO and can be found [here](https://github.com/itsm1kekay/wildfire-detection/YOLO).
+  - The 4 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#performance).
 
 The current progress of the group is tracked using a [Gannt Chart](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#gantt-chart).
 
@@ -28,6 +29,12 @@ The current progress of the group is tracked using a [Gannt Chart](https://githu
   width = "400"
 </h1>
 
+### Hybrid approach:
+<h1 align="center">
+  <img src= "/assets/Hybrid Approach.png"
+  width = "400"
+</h1>
+
 ### ML approach:
 <h1 align="center">
   <img src= "/assets/DL pipeline.png"
@@ -35,14 +42,12 @@ The current progress of the group is tracked using a [Gannt Chart](https://githu
 </h1>
 
 ## Performance
-|      Metrics       |Convensional|  ML-model  |   Yolo |  U-Net  |   Deeplab (optional)      |   Hybrids  |
-|--------------------|------------|------------|--------|---------|---------------------------|------------|
-|Computational cost  |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
-|Speed (in fps)      |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
-|Adaptability        |    TBD     |    TBD     |    TBD |   TBD   |           MBD             |    TBD     |
-|Detection rate      |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
-|Precision           |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
-|Recall              |    TBD     |    TBD     |   TBD  |   TBD   |           MBD             |    TBD     |
+|      Metrics       |Conventional|  Yolo  |  U-Net  |   Hybrid   |
+|--------------------|------------|--------|---------|------------|
+|Computational cost  |    Small   |   TBD  |   Very high (12GB VRAM)   |    Medium     |
+|Speed (in fps)      |  ~55    |   TBD  |   ~45   |    TBD     |
+|Precision           |    N/A     |   TBD  |   0.84- 0.96   |    1     |
+|Recall              |    N/A     |   TBD  |   0.60-0.68   |    0.56     |
 
 ## Gantt Chart
 <h1 align="center">
@@ -53,7 +58,11 @@ The current progress of the group is tracked using a [Gannt Chart](https://githu
 ## Websites for images 
 - https://www.goes.noaa.gov
 - https://terra.nasa.gov/about/terra-instruments/modis 
-- https://data-nifc.opendata.arcgis.com/search?tags=cy_wildlandfire_opendata%2CCategory 
+- https://data-nifc.opendata.arcgis.com/search?tags=cy_wildlandfire_opendata%2CCategory
+- https://ieee-dataport.org/open-access/flame-3-radiometric-thermal-uav-imagery-wildfire-management
+- https://ieee-dataport.org/open-access/flame-2-fire-detection-and-modeling-aerial-multi-spectral-image-dataset
+- https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs
+
   
 ## References
 <a id="1">[1]</a> 
