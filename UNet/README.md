@@ -1,3 +1,4 @@
+<<<<<<< HEAD:README.md
 <<<<<<< HEAD
 <<<<<<< HEAD
 <table style="width: 100%; table-layout: fixed ">
@@ -139,6 +140,8 @@ L. Huang, G. Liu, Y. Wang, H. Yuan, and T. Chen, “Fire detection in video surv
 =======
 =======
 >>>>>>> 8e00797f (Modify README.md Add Articles folder)
+=======
+>>>>>>> b696454c (rebased branches and did some housekeeping):UNet/README.md
 Objectives:
 - how much does dataset effect prediction performance. Can wildfires detection from Greece be generalized to other countries
 - Data availability 
@@ -155,6 +158,7 @@ Question:
 Dataset:
 - https://www.kaggle.com/datasets/elmadafri/the-wildfire-dataset - Range of resolutions
 - https://www.kaggle.com/datasets/abdelghaniaaba/wildfire-prediction-dataset - Low Res ~42k images
+<<<<<<< HEAD:README.md
 - https://zenodo.org/records/6475592 - Example from notebook
 <<<<<<< HEAD
 >>>>>>> 2df3dffb (adds gitignore)
@@ -175,3 +179,6 @@ Sentinel-2 Data: https://dataspace.copernicus.eu/explore-data/data-collections/s
 Sentinel-5P Datta: https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-5p # (Sentinel-5P atmosphere related)
 >>>>>>> 668b1be7 (Modify README.md Add Articles folder)
 >>>>>>> 8e00797f (Modify README.md Add Articles folder)
+=======
+- https://zenodo.org/records/6475592 - Example from notebook
+>>>>>>> b696454c (rebased branches and did some housekeeping):UNet/README.md
