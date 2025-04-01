@@ -5,7 +5,7 @@
     </td>
     <td style="text-align: center">
       <h2>Real-time Wildfire Detection</h2>
-      <p>Wildfires are a serious global threat, making early detection essential. This project compares conventional image processing techniques with an ML-driven approach to detect wildfires in real-time.</p>
+      <p>Wildfires are a serious global threat, making early detection essential. This project compares conventional image processing techniques with an DL-driven approach to detect wildfires in real-time.</p>
     </td>
   </tr>
 </table>
@@ -19,7 +19,7 @@ The project is split into 3 main parts, each person developing an algorithm, cap
   - The third algorithm, developed by Mukul Narwani, is a Convolutional Neural Network based off of UNet and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/UNet).
   - The fourth algorithm, developed by Sai Tam, is another Convolutional Neural Network based off of YOLO and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/YOLO).
   
-  The 4 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#performance).
+  The 4 approaches (conventional, DL and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#performance).
 
 The current progress of the group is tracked using a [Gannt Chart](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#gantt-chart).
 
@@ -41,7 +41,7 @@ Datasets can be found in [References](https://github.com/itsm1kekay/wildfire-det
   width = "400"
 </h1>
 
-### ML approach:
+### Deep Learning approach:
 <h1 align="center">
   <img src= "/Assets/DL pipeline.png"
   width = "400"
