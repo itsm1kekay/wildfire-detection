@@ -13,32 +13,34 @@
 
 ## Description
 Repository for group project in real-time wildfire detection for the EE581 module at the University of Strathclyde, developed by Group 8 (Joseph Kromer, Sai Tam, Mukul Narwani and Michail Kasmeridis). 
-The project is split into 3 parts, each person developing an algorithm, capable of detecting wildfires in real-time.
+The project is split into 3 main parts, each person developing an algorithm, capable of detecting wildfires in real-time.
   - The first algorithm developed by Michail Kasmeridis uses conventional image processing techniques and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Conventional).
   - The second algorithm, developed by Joseph Kromer, used conventional + ML to develop a hybrid model and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Hybrid).   
   - The third algorithm, developed by Mukul Narwani, is a Convolutional Neural Network based off of UNet and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/UNet).
   - The fourth algorithm, developed by Sai Tam, is another Convolutional Neural Network based off of YOLO and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/YOLO).
   
-  The 4 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#performance).
+  The 4 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#Performance).
 
-The current progress of the group is tracked using a [Gannt Chart](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#gantt-chart).
+The current progress of the group is tracked using a [Gannt Chart](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#Gantt-chart).
+
+The developent required literature review, with all our literature listed in [References](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#References) and provided in [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Sources)
 
 ## Flow charts and system design
 ### Conventional approach:
 <h1 align="center">
-  <img src= "/assets/Conventional Approach.png"
+  <img src= "/Assets/Conventional Approach.png"
   width = "400"
 </h1>
 
 ### Hybrid approach:
 <h1 align="center">
-  <img src= "/assets/Hybrid Approach.png"
+  <img src= "/Assets/Hybrid Approach.png"
   width = "400"
 </h1>
 
 ### ML approach:
 <h1 align="center">
-  <img src= "/assets/DL pipeline.png"
+  <img src= "/Assets/DL pipeline.png"
   width = "400"
 </h1>
 
