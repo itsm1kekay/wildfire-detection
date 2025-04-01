@@ -14,11 +14,12 @@
 ## Description
 Repository for group project in real-time wildfire detection for the EE581 module at the University of Strathclyde, developed by Group 8 (Joseph Kromer, Sai Tam, Mukul Narwani and Michail Kasmeridis). 
 The project is split into 3 parts, each person developing an algorithm, capable of detecting wildfires in real-time.
-  - The first algorithm developed by Michail Kasmeridis uses conventional image processing techniques and can be found [here](https://github.com/itsm1kekay/wildfire-detection/conventional).
-  - The second algorithm, developed by Joseph Kromer, used conventional + ML to develop a hybrid model and can be found [here](https://github.com/itsm1kekay/wildfire-detection/hybrid).   
-  - The third algorithm, developed by Mukul Narwani, is a Convolutional Neural Network based off of UNet and can be found [here](https://github.com/itsm1kekay/wildfire-detection/UNet).
-  - The fourth algorithm, developed by Sai Tam, is another Convolutional Neural Network based off of YOLO and can be found [here](https://github.com/itsm1kekay/wildfire-detection/YOLO).
-  - The 4 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#performance).
+  - The first algorithm developed by Michail Kasmeridis uses conventional image processing techniques and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Conventional).
+  - The second algorithm, developed by Joseph Kromer, used conventional + ML to develop a hybrid model and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Hybrid).   
+  - The third algorithm, developed by Mukul Narwani, is a Convolutional Neural Network based off of UNet and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/UNet).
+  - The fourth algorithm, developed by Sai Tam, is another Convolutional Neural Network based off of YOLO and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/YOLO).
+  
+  The 4 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#performance).
 
 The current progress of the group is tracked using a [Gannt Chart](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#gantt-chart).
 
@@ -62,6 +63,7 @@ The current progress of the group is tracked using a [Gannt Chart](https://githu
 - https://ieee-dataport.org/open-access/flame-3-radiometric-thermal-uav-imagery-wildfire-management
 - https://ieee-dataport.org/open-access/flame-2-fire-detection-and-modeling-aerial-multi-spectral-image-dataset
 - https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs
+- https://www.youtube.com/
 
   
 ## References
