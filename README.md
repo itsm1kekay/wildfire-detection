@@ -19,11 +19,11 @@ The project is split into 3 main parts, each person developing an algorithm, cap
   - The third algorithm, developed by Mukul Narwani, is a Convolutional Neural Network based off of UNet and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/UNet).
   - The fourth algorithm, developed by Sai Tam, is another Convolutional Neural Network based off of YOLO and can be found [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/YOLO).
   
-  The 4 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#Performance).
+  The 4 approaches (conventional, ML and hybrid) will be evaluated using the metrics shown in [Performance](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#performance).
 
-The current progress of the group is tracked using a [Gannt Chart](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#Gantt-chart).
+The current progress of the group is tracked using a [Gannt Chart](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#gantt-chart).
 
-The developent required literature review, with all our literature listed in [References](https://github.com/itsm1kekay/wildfire-detection/edit/main/README.md#References) and provided in [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Sources)
+The developent required literature review, with all our literature listed in [References](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#references) and provided in [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Sources)
 
 ## Flow charts and system design
 ### Conventional approach:
