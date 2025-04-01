@@ -1,7 +1,7 @@
 <table style="width: 100%; table-layout: fixed ">
   <tr>
     <td>
-      <img src="/assets/Logo.png" width = "200">
+      <img src="/Assets/Logo.png" width = "200">
     </td>
     <td style="text-align: center">
       <h2>Real-time Wildfire Detection</h2>
