@@ -54,7 +54,7 @@ The developent required literature review, with all our literature listed in [Re
 
 ## Gantt Chart
 <h1 align="center">
-  <img src= "/assets/EE581 Gantt Chart.png"
+  <img src= "/Assets/EE581 Gantt Chart.png"
   width = "1000"
 </h1>
   
