@@ -23,7 +23,10 @@ The project is split into 3 main parts, each person developing an algorithm, cap
 
 The current progress of the group is tracked using a [Gannt Chart](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#gantt-chart).
 
-The developent required literature review, with all our literature listed in [References](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#references) and provided in [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Sources)
+The developent required literature review, with all our literature listed in [References](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#references) and provided in [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Sources).
+
+
+Datasets can be found in [References](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#websites-for-datasets) with some provided [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Videos%20of%20Wildfires). For any modification required to the datasets, you can utilise the scripts available [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Scripts)
 
 ## Flow charts and system design
 ### Conventional approach:
@@ -58,7 +61,7 @@ The developent required literature review, with all our literature listed in [Re
   width = "1000"
 </h1>
   
-## Websites for images 
+## Websites for datasets 
 - https://www.goes.noaa.gov
 - https://terra.nasa.gov/about/terra-instruments/modis 
 - https://data-nifc.opendata.arcgis.com/search?tags=cy_wildlandfire_opendata%2CCategory
