@@ -1,13 +1,11 @@
-# wildfire-detection
-## Objectives
+# Object detection - How to run
 
-## Models
+## Prere
+
+Run on Python 3.9.6 and CUDA version 11.8
+
+## Install libraries
+run: python3 -m venv ./ee981_group_c source ee981_group_c/bin/activate pip install -r requirements.txt
 
 ## Dataset
-D-Fire Dataset: https://github.com/gaiasd/DFireDataset # (Annotated in Yolo format)
-
-Wildfire Smoke Dataset: https://github.com/aiformankind/wildfire-smoke-dataset # (Smoke and Cloud Dataset)
-
-Sentinel-2 Data: https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2 # (Sentinel-2 multi-spectral imaging)
-
-Sentinel-5P Datta: https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-5p # (Sentinel-5P atmosphere related)
+The D-Fire Dataset can be found [here](https://github.com/gaiasd/DFireDataset) and download the D-Fire.zip
