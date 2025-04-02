@@ -50,10 +50,10 @@ Datasets can be found in [References](https://github.com/itsm1kekay/wildfire-det
 ## Performance
 |      Metrics       |Conventional|  Yolo  |  U-Net  |   Hybrid   |
 |--------------------|------------|--------|---------|------------|
-|Computational cost  |    Small   |   TBD  |   Very high (12GB VRAM)   |    Medium     |
-|Speed (in fps)      |  ~55    |   TBD  |   ~45   |    TBD     |
-|Precision           |    N/A     |   TBD  |   0.84- 0.96   |    1     |
-|Recall              |    N/A     |   TBD  |   0.60-0.68   |    0.56     |
+|Computational cost  |    Small   |   Very high (24GB VRAM)  |   Very high (12GB VRAM)   |    Medium     |
+|Speed (in fps)      |  ~55    |   ~60  |   ~45   |    TBD     |
+|Precision           |    N/A     |   0.76  |   0.84- 0.96   |    1     |
+|Recall              |    N/A     |   0.68  |   0.60-0.68   |    0.56     |
 
 ## Gantt Chart
 <h1 align="center">
