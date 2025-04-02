@@ -7,7 +7,6 @@ run:
 `source ee981_group_c/bin/activate`
 `pip install -r requirements.txt`
 ## Install datasets
-TODO link to ds and vid
-Place 1-zenmouse vid in the same dir the nb is being run
+From the [datasets](https://ieee-dataport.org/open-access/flame-dataset-aerial-imagery-pile-burn-detection-using-drones-uavs) download the 1.14 gb zenmouse video and place 1-zenmouse vid in the same dir the nb is being run. Additionally download the images and mask datasets (number 9)
 
 Change DS path under preprocessing to images and masks folders and run all
