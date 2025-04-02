@@ -1,0 +1,20 @@
+1.) Ensure that folders containing fire/nofire training frames
+are in the correct folder, or alternatively ensure that the pre-trained
+SVM is in the same folder as the python script.
+
+2.) Ensure that the video to run detection on is in the same folder as the python 
+script, and that the name is inserted into the python file.
+
+3.) Run the code. This should either train the SVM if required, or just reuse the
+pre-trained SVM. 
+
+4.) A window should appear, showing the input video with any fire candidate regions
+clearly marked using a bounding box.
+
+5.) As this window is playing, the system is working out the wavelet energy and using them
+to make predictions. Please be patient.
+
+6.) When the algorithm finishes running, a series of graphs will be output. One graph will
+show the wavelet energy of the frames. The other graph will show the classification of predictions
+for the frames. Ideally, the graph should all read zero; it will read one if a fire has been detected,
+which indicates that the alarm should be raised.
