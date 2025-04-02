@@ -26,7 +26,9 @@ The current progress of the group is tracked using a [Gannt Chart](https://githu
 The developent required literature review, with all our literature listed in [References](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#references) and provided in [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Sources).
 
 
-Datasets can be found in [References](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#websites-for-datasets) with some provided [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Videos%20of%20Wildfires). For any modification required to the datasets, you can utilise the scripts available [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Scripts).
+Datasets can be found in [Datasets](https://github.com/itsm1kekay/wildfire-detection/blob/main/README.md#websites-for-datasets) with some provided [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Videos%20of%20Wildfires). For any modification required to the datasets, you can utilise the scripts available [here](https://github.com/itsm1kekay/wildfire-detection/tree/main/Scripts).
+
+A full comprehensive user guide for any algorithm can be found inside the models' directory. 
 
 ## Flow charts and system design
 ### Conventional approach:
